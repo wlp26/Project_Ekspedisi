@@ -10,13 +10,15 @@ class _DetailHistoryScreenState extends State<DetailHistoryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            leading: IconButton(
-              icon: Icon(Icons.arrow_back),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-            title: Text("History")),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+          title: Text("History"),
+          backgroundColor: Colors.black,
+        ),
         body: Container(
           padding: EdgeInsets.only(top: 40.0),
           child: Column(
