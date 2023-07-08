@@ -11,6 +11,19 @@ class _Pengiriman extends State<Pengiriman> {
     return Scaffold(
         appBar:
             AppBar(title: Text("Pengiriman"), backgroundColor: Colors.black),
-        body: Container(child: Column(children: <Widget>[Text("hallo")])));
+        body: Container(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+              Container(
+                padding: EdgeInsets.only(top: 10),
+                child: Text(
+                  "No Order",
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ])));
   }
 }
