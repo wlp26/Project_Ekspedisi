@@ -16,19 +16,25 @@ class _DetailHistoryScreenState extends State<DetailHistoryScreen> {
               Navigator.pop(context);
             },
           ),
-          title: Text("History"),
+          title: Text('Histori'),
           backgroundColor: Colors.black,
         ),
-        body: Container(
-          padding: EdgeInsets.only(top: 40.0),
+        body: SingleChildScrollView(
+          padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 50.0),
           child: Column(
             children: [
               Card(
-                color: Colors.grey[350],
+                color: const Color.fromARGB(1, 206, 206, 206),
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(
+                    color: Colors.black,
+                    width: 1.5,
+                  ),
+                ),
                 child: Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(16.0),
+                    Container(
+                      padding: const EdgeInsets.only(top: 10.0),
                       child: Center(
                         child: Text(
                           'Nomor Order',
@@ -46,7 +52,10 @@ class _DetailHistoryScreenState extends State<DetailHistoryScreen> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      subtitle: Text('Driver Name'),
+                      subtitle: Text(
+                        'Driver Name',
+                        style: TextStyle(color: Colors.black),
+                      ),
                     ),
                     ListTile(
                       title: Text(
@@ -104,7 +113,7 @@ class _DetailHistoryScreenState extends State<DetailHistoryScreen> {
                     ),
                     ListTile(
                       title: Text(
-                        'Tanggal Sampai',
+                        'Tanggal Selesai',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),

@@ -26,95 +26,93 @@ class _DetailPengantaranScreenState extends State<DetailPengantaranScreen> {
             children: [
               Card(
                 color: const Color.fromARGB(1, 206, 206, 206),
-                child: Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.black,
-                      width: 1.5,
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(
+                    color: Colors.black,
+                    width: 1.5,
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.only(top: 10.0),
+                      child: Center(
+                        child: Text(
+                          'Nomor Order',
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
-                  child: Column(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.only(top: 10.0),
-                        child: Center(
-                          child: Text(
-                            'Nomor Order',
-                            style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
+                    ListTile(
+                      title: Text(
+                        'Driver',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
-                      ListTile(
-                        title: Text(
-                          'Driver',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        subtitle: Text(
-                          'Driver Name',
-                          style: TextStyle(color: Colors.black),
+                      subtitle: Text(
+                        'Driver Name',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Jenis Kendaraan',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
-                      ListTile(
-                        title: Text(
-                          'Jenis Kendaraan',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+                      subtitle: Text('Nama Kendaraan'),
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Nomor Plat',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                         ),
-                        subtitle: Text('Nama Kendaraan'),
                       ),
-                      ListTile(
-                        title: Text(
-                          'Nomor Plat',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+                      subtitle: Text('Nomor'),
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Jenis Barang',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                         ),
-                        subtitle: Text('Nomor'),
                       ),
-                      ListTile(
-                        title: Text(
-                          'Jenis Barang',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+                      subtitle: Text('Barang'),
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Alamat Asal',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                         ),
-                        subtitle: Text('Barang'),
                       ),
-                      ListTile(
-                        title: Text(
-                          'Alamat Asal',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+                      subtitle: Text('Alamat'),
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Alamat Tujuan',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                         ),
-                        subtitle: Text('Alamat'),
                       ),
-                      ListTile(
-                        title: Text(
-                          'Alamat Tujuan',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+                      subtitle: Text('Alamat'),
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Tanggal Pengantaran',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                         ),
-                        subtitle: Text('Alamat'),
                       ),
-                      ListTile(
-                        title: Text(
-                          'Tanggal Pengantaran',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        subtitle: Text('Tanggal'),
-                      ),
-                    ],
-                  ),
+                      subtitle: Text('Tanggal'),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(height: 16.0),
