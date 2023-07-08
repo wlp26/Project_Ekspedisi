@@ -11,6 +11,6 @@ class _Pengiriman extends State<Pengiriman> {
     return Scaffold(
         appBar:
             AppBar(title: Text("Pengiriman"), backgroundColor: Colors.black),
-        body: Container());
+        body: Container(child: Column(children: <Widget>[Text("hallo")])));
   }
 }
