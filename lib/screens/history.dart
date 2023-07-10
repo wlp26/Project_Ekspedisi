@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_ekspedisi/screens/detailHistory.dart';
 
 class HistoryScreen extends StatefulWidget {
   const HistoryScreen({Key? key}) : super(key: key);
@@ -21,17 +20,17 @@ class _HistoryScreenState extends State<HistoryScreen> {
             Navigator.pop(context);
           },
         ),
-        title: const Center(
-          child: Text('History'),
-        ),
+        title: Text("History"),
+        backgroundColor: Colors.black,
       ),
       body: ListView(
+        padding: EdgeInsets.all(12.0),
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.only(top: 20),
                 child: Center(
                   child: Text(
                     'History',
@@ -83,52 +82,69 @@ class _HistoryScreenState extends State<HistoryScreen> {
                 ),
               ),
               const SizedBox(height: 16),
-              Card(
-                color: Colors.grey[200],
-                child: ListTile(
-                  leading: const CircleAvatar(
-                    child: Icon(Icons.image),
-                  ),
-                  title: const Text('Order Number'),
-                  subtitle: const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Tanggal Sampai'),
-                      Text('Tujuan'),
-                    ],
-                  ),
-                  trailing: IconButton(
-                    icon: const Icon(Icons.arrow_forward),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => DetailHistoryScreen(),
-                        ),
-                      );
-                    },
+              Container(
+                // atur lebar sesuai kebutuhan Anda
+                height: 80,
+                child: Card(
+                  color: const Color.fromARGB(
+                      1, 206, 206, 206), // Set the desired shade of grey
+                  child: ListTile(
+                    minVerticalPadding: 10.0,
+                    leading: CircleAvatar(
+                      child: Icon(Icons.image), // Replace with your thumbnail
+                    ),
+                    title: Text('Order Number'),
+                    titleTextStyle: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                        fontSize: 18),
+                    subtitle: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Jadwal Pengantaran'),
+                        Text('Tujuan'),
+                      ],
+                    ),
+                    trailing: IconButton(
+                      alignment: Alignment.topCenter,
+                      icon: Icon(Icons.arrow_forward),
+                      onPressed: () {
+                        // Add the desired functionality when the button is pressed
+                      },
+                    ),
                   ),
                 ),
               ),
-              Card(
-                color: Colors.grey[200],
-                child: ListTile(
-                  leading: const CircleAvatar(
-                    child: Icon(Icons.image),
-                  ),
-                  title: const Text('Order Number'),
-                  subtitle: const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Tanggal Sampai'),
-                      Text('Tujuan'),
-                    ],
-                  ),
-                  trailing: IconButton(
-                    icon: const Icon(Icons.arrow_forward),
-                    onPressed: () {
-                      // Add the desired functionality when the button is pressed
-                    },
+              Container(
+                // atur lebar sesuai kebutuhan Anda
+                height: 80,
+                child: Card(
+                  color: const Color.fromARGB(
+                      1, 206, 206, 206), // Set the desired shade of grey
+                  child: ListTile(
+                    minVerticalPadding: 10.0,
+                    leading: CircleAvatar(
+                      child: Icon(Icons.image), // Replace with your thumbnail
+                    ),
+                    title: Text('Order Number'),
+                    titleTextStyle: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                        fontSize: 18),
+                    subtitle: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Jadwal Pengantaran'),
+                        Text('Tujuan'),
+                      ],
+                    ),
+                    trailing: IconButton(
+                      alignment: Alignment.topCenter,
+                      icon: Icon(Icons.arrow_forward),
+                      onPressed: () {
+                        // Add the desired functionality when the button is pressed
+                      },
+                    ),
                   ),
                 ),
               ),

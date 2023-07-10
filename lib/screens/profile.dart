@@ -18,9 +18,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
             Navigator.pop(context);
           },
         ),
-        title: const Center(
-          child: Text('Profile'),
-        ),
+        title: Text("Profile"),
+        backgroundColor: Colors.black,
       ),
       body: Align(
         alignment: Alignment.topCenter,
