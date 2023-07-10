@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screen/detail_history.dart';
+import 'package:project_ekspedisi/screens/detailHistory.dart';
 
 class HistoryScreen extends StatefulWidget {
   const HistoryScreen({Key? key}) : super(key: key);
@@ -103,7 +103,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const DetailHistoryScreen(),
+                          builder: (context) => DetailHistoryScreen(),
                         ),
                       );
                     },
