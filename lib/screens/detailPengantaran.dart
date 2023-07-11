@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_ekspedisi/screens/pengiriman.dart';
 
 class DetailPengantaranScreen extends StatefulWidget {
   @override
@@ -118,7 +119,10 @@ class _DetailPengantaranScreenState extends State<DetailPengantaranScreen> {
               SizedBox(height: 16.0),
               ElevatedButton(
                 onPressed: () {
-                  // Add your desired functionality when the button is pressed
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Pengiriman()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(150.0, 50.0),
