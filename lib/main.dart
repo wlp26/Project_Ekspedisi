@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:project_ekspedisi/screens/login.dart';
+import 'screens/login.dart';
 
 void main() {
   runApp(EkspedisiApp());
