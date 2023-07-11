@@ -108,13 +108,13 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: ListView(
-        padding: EdgeInsets.all(12.0),
+        padding: EdgeInsets.all(8.0),
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                padding: const EdgeInsets.all(30.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Center(
                   child: Text(
                     'List Pengantaran',

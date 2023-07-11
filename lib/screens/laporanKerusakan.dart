@@ -176,7 +176,7 @@ class _LaporanKerusakan extends State<LaporanKerusakan> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
-                    child: Text('Start'),
+                    child: Text('Submit'),
                   ),
                 ]))));
   }
