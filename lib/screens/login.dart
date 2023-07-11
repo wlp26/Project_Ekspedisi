@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_ekspedisi/screens/home.dart';
+import 'package:project_ekspedisi/screens/lupaPassword.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -90,10 +91,10 @@ class _LoginState extends State<Login> {
               child: GestureDetector(
                 onTap: () {
                   // Pindahkan pengguna ke halaman lain di sini
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => HalamanBaru()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LupaPassword()),
+                  );
                 },
                 child: Text(
                   "Lupa Password ?",
