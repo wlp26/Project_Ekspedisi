@@ -19,7 +19,6 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Login"),
         backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
@@ -28,7 +27,7 @@ class _LoginState extends State<Login> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Padding(
+            Container(
               padding: EdgeInsets.only(bottom: 150.0),
               child: Text(
                 "Login",
@@ -83,6 +82,23 @@ class _LoginState extends State<Login> {
                     ),
                     hintText: "Password"),
                 obscureText: _obscurePassword,
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(8.0),
+              alignment: Alignment.centerRight,
+              child: GestureDetector(
+                onTap: () {
+                  // Pindahkan pengguna ke halaman lain di sini
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(builder: (context) => HalamanBaru()),
+                  // );
+                },
+                child: Text(
+                  "Lupa Password ?",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
               ),
             ),
             SizedBox(height: 24.0),

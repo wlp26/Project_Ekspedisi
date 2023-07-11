@@ -30,19 +30,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Padding(
-                padding: EdgeInsets.only(top: 16.0),
-                child: Center(
-                  child: Text(
-                    'History',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
+              Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
                   children: [
@@ -117,6 +105,11 @@ class _HistoryScreenState extends State<HistoryScreen> {
                         );
                       },
                     ),
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DetailHistoryScreen()),
+                    ),
                   ),
                 ),
               ),
@@ -149,6 +142,11 @@ class _HistoryScreenState extends State<HistoryScreen> {
                       onPressed: () {
                         // Add the desired functionality when the button is pressed
                       },
+                    ),
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DetailHistoryScreen()),
                     ),
                   ),
                 ),

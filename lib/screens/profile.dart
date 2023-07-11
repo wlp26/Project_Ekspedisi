@@ -21,7 +21,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         title: Text("Profile"),
         backgroundColor: Colors.black,
       ),
-      body: Align(
+      body: Container(
         alignment: Alignment.topCenter,
         child: ListView(
           padding: EdgeInsets.all(16),
@@ -69,6 +69,20 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   title: Text('No Hp'),
                 ),
               ),
+            ),
+            SizedBox(height: 32.0),
+            ElevatedButton(
+              onPressed: () {
+                // Add your desired functionality when the button is pressed
+              },
+              style: ElevatedButton.styleFrom(
+                minimumSize: Size(60.0, 50.0),
+                backgroundColor: Colors.red,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              ),
+              child: Text('Log out'),
             ),
           ],
         ),

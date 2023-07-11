@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                padding: const EdgeInsets.all(30.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Center(
                   child: Text(
                     'List Pengantaran',
@@ -165,6 +165,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         );
                       },
                     ),
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DetailPengantaranScreen()),
+                    ),
                   ),
                 ),
               ),
@@ -197,6 +202,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       onPressed: () {
                         // Add the desired functionality when the button is pressed
                       },
+                    ),
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DetailPengantaranScreen()),
                     ),
                   ),
                 ),
@@ -249,6 +259,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   },
                 ),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => DetailHistoryScreen()),
+                ),
               ),
             ),
           ),
@@ -281,6 +296,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   onPressed: () {
                     // Add the desired functionality when the button is pressed
                   },
+                ),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => DetailHistoryScreen()),
                 ),
               ),
             ),
