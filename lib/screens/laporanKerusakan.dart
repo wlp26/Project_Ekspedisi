@@ -18,6 +18,7 @@ class _LaporanKerusakan extends State<LaporanKerusakan> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(
             leading: IconButton(
               icon: Icon(Icons.arrow_back),
@@ -132,6 +133,7 @@ class _LaporanKerusakan extends State<LaporanKerusakan> {
                   ),
                   Container(
                       width: 250, // Mengatur lebar container
+
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
@@ -158,9 +160,7 @@ class _LaporanKerusakan extends State<LaporanKerusakan> {
                           contentPadding: EdgeInsets.symmetric(
                               vertical: 10, horizontal: 16),
                         ),
-                        minLines: 1,
                         maxLines: 5,
-                        maxLength: 250,
                       )),
                   SizedBox(
                     height: 50.0,
