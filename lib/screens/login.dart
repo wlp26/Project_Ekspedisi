@@ -18,23 +18,23 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Login"),
         backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(30.0),
+        padding: EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(bottom: 150.0),
+            Container(
+              //padding: EdgeInsets.only(bottom: 150.0),
               child: Text(
                 "Login",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
             ),
+            SizedBox(height: 40.0),
             Container(
               decoration: BoxDecoration(
                   border: Border.all(
