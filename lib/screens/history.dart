@@ -24,13 +24,13 @@ class _HistoryScreenState extends State<HistoryScreen> {
         backgroundColor: Colors.black,
       ),
       body: ListView(
-        padding: EdgeInsets.all(12.0),
+        padding: EdgeInsets.all(8.0),
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Padding(
-                padding: EdgeInsets.only(top: 20),
+                padding: EdgeInsets.only(top: 16.0),
                 child: Center(
                   child: Text(
                     'History',
@@ -122,7 +122,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   color: const Color.fromARGB(
                       1, 206, 206, 206), // Set the desired shade of grey
                   child: ListTile(
-                    minVerticalPadding: 10.0,
+                    minVerticalPadding: 8.0,
                     leading: CircleAvatar(
                       child: Icon(Icons.image), // Replace with your thumbnail
                     ),

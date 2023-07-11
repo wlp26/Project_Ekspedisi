@@ -21,7 +21,7 @@ class _DetailPengantaranScreenState extends State<DetailPengantaranScreen> {
           backgroundColor: Colors.black,
         ),
         body: SingleChildScrollView(
-          padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 50.0),
+          padding: EdgeInsets.only(left: 24.0, right: 24.0, top: 40.0),
           child: Column(
             children: [
               Card(
@@ -35,7 +35,7 @@ class _DetailPengantaranScreenState extends State<DetailPengantaranScreen> {
                 child: Column(
                   children: [
                     Container(
-                      padding: const EdgeInsets.only(top: 10.0),
+                      padding: const EdgeInsets.only(top: 8.0),
                       child: Center(
                         child: Text(
                           'Nomor Order',
@@ -129,7 +129,6 @@ class _DetailPengantaranScreenState extends State<DetailPengantaranScreen> {
                 ),
                 child: Text('Start'),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 10.0))
             ],
           ),
         ));
