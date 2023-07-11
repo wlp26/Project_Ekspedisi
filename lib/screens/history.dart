@@ -117,6 +117,11 @@ class _HistoryScreenState extends State<HistoryScreen> {
                         );
                       },
                     ),
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DetailHistoryScreen()),
+                    ),
                   ),
                 ),
               ),
@@ -149,6 +154,11 @@ class _HistoryScreenState extends State<HistoryScreen> {
                       onPressed: () {
                         // Add the desired functionality when the button is pressed
                       },
+                    ),
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DetailHistoryScreen()),
                     ),
                   ),
                 ),
