@@ -24,7 +24,7 @@ class _Pengiriman extends State<Pengiriman> {
         ),
       ),
       body: const Center(
-        child: Text("The Flutter Way!"),
+        child: Text("The Flutter test!"),
       ),
     );
   }
