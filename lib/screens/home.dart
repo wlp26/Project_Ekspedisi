@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:project_ekspedisi/screens/profile.dart';
+import 'package:project_ekspedisi/screens/detailPengantaran.dart';
+import 'package:project_ekspedisi/screens/detailHistory.dart';
+import 'package:project_ekspedisi/screens/history.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -74,10 +78,10 @@ class _HomeScreenState extends State<HomeScreen> {
             size: 35.0,
           ),
           onPressed: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(builder: (context) => ProfileScreen()),
-            // );
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProfileScreen()),
+            );
           },
         ),
         actions: [
@@ -114,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(30.0),
                 child: Center(
                   child: Text(
                     'List Pengantaran',
@@ -154,11 +158,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       alignment: Alignment.topCenter,
                       icon: Icon(Icons.arrow_forward),
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //       builder: (context) => DetailPengantaranScreen()),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DetailPengantaranScreen()),
+                        );
                       },
                     ),
                   ),
@@ -238,11 +242,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   alignment: Alignment.topCenter,
                   icon: Icon(Icons.arrow_forward),
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //       builder: (context) => DetailHistoryScreen()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DetailHistoryScreen()),
+                    );
                   },
                 ),
               ),
@@ -285,10 +289,10 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.all(8.0),
             child: TextButton(
               onPressed: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => HistoryScreen()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HistoryScreen()),
+                );
               },
               child: Text(
                 'View More',

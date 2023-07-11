@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_ekspedisi/screens/detailHistory.dart';
 
 class HistoryScreen extends StatefulWidget {
   const HistoryScreen({Key? key}) : super(key: key);
@@ -109,7 +110,11 @@ class _HistoryScreenState extends State<HistoryScreen> {
                       alignment: Alignment.topCenter,
                       icon: Icon(Icons.arrow_forward),
                       onPressed: () {
-                        // Add the desired functionality when the button is pressed
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DetailHistoryScreen()),
+                        );
                       },
                     ),
                   ),
