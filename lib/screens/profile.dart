@@ -33,7 +33,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 size: 140,
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 24),
             Card(
               child: InkWell(
                 onTap: () {
