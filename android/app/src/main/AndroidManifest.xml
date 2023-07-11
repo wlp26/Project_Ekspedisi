@@ -3,8 +3,7 @@
         android:label="project_ekspedisi"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAw7Gj3WE8jEDCnCVAJxayFnf2wWD8WQTQ" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
